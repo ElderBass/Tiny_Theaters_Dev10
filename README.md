@@ -5,9 +5,9 @@
 
 _TODO_ Add time estimates to each of the top-level tasks
 
-* [ ] Create a new GitHub repo for this assessment (#.# hours)
-    * [ ] Update the README with the contents from this file
-    * [ ] Add the instruction team as collaborators (smashdevcode, WillSuggs, scertain)
+* [x] Create a new GitHub repo for this assessment (#.# hours)
+    * [x] Update the README with the contents from this file
+    * [x] Add the instruction team as collaborators (smashdevcode, WillSuggs, scertain)
 
 * [ ] Review the requirements (#.# hours)
 
