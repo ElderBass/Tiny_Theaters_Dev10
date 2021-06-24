@@ -9,19 +9,19 @@ _TODO_ Add time estimates to each of the top-level tasks
     * [x] Update the README with the contents from this file
     * [x] Add the instruction team as collaborators (smashdevcode, WillSuggs, scertain)
 
-* [ ] Review the requirements (#.# hours)
+* [x] Review the requirements (#.# hours)
 
-* [ ] Download the provided data (#.# hours)
+* [x] Download the provided data (#.# hours)
 
-* [ ] Review the provided data (#.# hours)
+* [x] Review the provided data (#.# hours)
 
-* [ ] Identify any research that I need to do (#.# hours)
+* [x] Identify any research that I need to do (#.# hours)
 
 ---
 
 _These steps can be done in class on Friday morning_
 
-* [ ] Design initial database schema (#.# hours)
+* [ ] Design initial database schema (1 hour)
     * [ ] Identify the tables that are needed
     * [ ] For each table...
         * Define a primary key
@@ -30,7 +30,7 @@ _These steps can be done in class on Friday morning_
         * Define any foreign keys
     * [ ] Identify any default or unique constraints
 
-* [ ] Draw a diagram of the database schema (#.# hours)
+* [ ] Draw a diagram of the database schema (.5 hours)
     * [ ] Share with one or more classmates for feedback
     * [ ] Update database schema as needed
     * [ ] Share updated diagram with one or more classmates
@@ -50,15 +50,15 @@ _Acceptable diagram formats_
 
 _These steps can be done in class on Friday afternoon_
 
-* [ ] Write the DDL in a file named `rcttc-schema.sql` to create the database (#.# hours)
+* [ ] Write the DDL in a file named `rcttc-schema.sql` to create the database (1.5 hours)
     * [ ] Drop and create the database
     * [ ] Create all of the tables
 
-* [ ] Import the provided data (#.# hours)
+* [ ] Import the provided data (1 hour)
     * [ ] Import the csv file using Workbench _or_
     * [ ] Run the provided SQL script
 
-* [ ] Write the DML in a file named `rcttc-data.sql` to populate the database tables (#.# hours)
+* [ ] Write the DML in a file named `rcttc-data.sql` to populate the database tables (1 hours)
     * [ ] Write insert-from-select statements to move the data from the denormalized table to the normalized tables
 
 **Make sure that my GitHub repo is updated!**
@@ -67,9 +67,9 @@ _These steps can be done in class on Friday afternoon_
 
 _These steps will be completed over the weekend_
 
-* [ ] Write the DML to make the necessary data updates (as outlined below) (#.# hours)
+* [ ] Write the DML to make the necessary data updates (as outlined below) (2 hours)
 
-* [ ] Write the required queries (as outlined below) in a file named `rcttc-queries.sql` (#.# hours)
+* [ ] Write the required queries (as outlined below) in a file named `rcttc-queries.sql` (2 hours)
 
 **Make frequent commits to my GitHub repo!**
 
