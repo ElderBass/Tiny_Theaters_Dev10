@@ -25,7 +25,7 @@ customer_phone,
 customer_address, 
 customer_id
 from customer
-where customer_email like "%.com"
+where customer_email not like "%.com"
 order by customer_name asc;
 
 -- Find the three cheapest shows.
@@ -38,14 +38,12 @@ limit 3;
 
 -- List customers and the show they're attending with no duplication.
 
-select concat(first_name, " ", last_name) as customer_name, 
-customer_email,
-`show`.show_name
+select concat(first_name, " ", last_name) as customer_name, customer_email, `show`.show_name
 from customer
 join ticket on ticket.customer_id = customer.customer_id
 join `show` on `show`.show_id = ticket.show_id
-group by customer_name
-order by customer_name asc;
+group by customer_name, `show`.show_id
+order by customer.first_name, customer.last_name asc;
 
 -- List customer, show, theater, and seat number in one query.
 
