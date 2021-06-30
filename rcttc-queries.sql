@@ -2,8 +2,10 @@ use rcttc;
 
 -- Find all performances in the last quarter of 2021 (Oct. 1, 2021 - Dec. 31 2021).
 
-select * from ticket
-where `date` between "2021-08-01" and "2021-12-31"
+select distinct show_name from `show`
+join ticket on ticket.show_id = `show`.show_id
+where `date` between "2021-10-01" and "2021-12-31"
+group by `show`.show_name
 order by `date` asc;
 
 -- List customers without duplication.
@@ -32,18 +34,30 @@ order by customer_name asc;
 
 select t.price, s.show_name from ticket t
 join `show` s on t.show_id = s.show_id
-group by s.show_name
+group by s.show_name, t.price
 order by t.price asc
 limit 3;
 
 -- List customers and the show they're attending with no duplication.
 
-select concat(first_name, " ", last_name) as customer_name, customer_email, `show`.show_name
+-- ORIGINAL QUERY
+
+select concat(first_name, " ", last_name) as customer_name, 
+`show`.show_name
 from customer
 join ticket on ticket.customer_id = customer.customer_id
 join `show` on `show`.show_id = ticket.show_id
-group by customer_name, `show`.show_id
-order by customer.first_name, customer.last_name asc;
+group by customer_name
+order by customer_name asc;
+
+-- SUBMITTED QUERY
+
+-- select concat(first_name, " ", last_name) as customer_name, customer_email, `show`.show_name
+-- from customer
+-- join ticket on ticket.customer_id = customer.customer_id
+-- join `show` on `show`.show_id = ticket.show_id
+-- group by customer_name, `show`.show_id
+-- order by customer.first_name, customer.last_name asc;
 
 -- List customer, show, theater, and seat number in one query.
 
